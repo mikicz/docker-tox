@@ -1,9 +1,9 @@
 # Tox
 
-*Available on Docker Hub as [`themattrix/tox`](https://registry.hub.docker.com/u/themattrix/tox/).*
+*Available on Docker Hub as [`mikicz/tox`](https://registry.hub.docker.com/u/mikict/tox/).*
 
 This image is intended for running [tox](https://tox.readthedocs.org/en/latest/) with
-Python 2.6, 2.7, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, PyPy, and PyPy3.
+Python 2.7, 3.6, 3.7, 3.8, 3.9, PyPy, and PyPy3.
 Its goal is to make testing your code against multiple Python versions quick and easy.
 The image contains several `ONBUILD` commands for initializing the tox environments with
 your project's `requirements.txt` files.

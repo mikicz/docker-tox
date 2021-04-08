@@ -1,6 +1,6 @@
-FROM themattrix/tox-base
+FROM mikicz/tox-base
 
-MAINTAINER Matthew Tardiff <mattrix@gmail.com>
+MAINTAINER Mikuláš Poul <mikulaspoul@gmail.com>
 
 ONBUILD COPY install-prereqs*.sh requirements*.txt tox.ini /app/
 ONBUILD ARG SKIP_TOX=false
