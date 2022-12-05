@@ -3,7 +3,7 @@
 *Available on Docker Hub as [`mikicz/tox`](https://registry.hub.docker.com/u/mikict/tox/).*
 
 This image is intended for running [tox](https://tox.readthedocs.org/en/latest/) with
-Python 3.6, 3.7, 3.8, 3.9, 3.10, and PyPy3.
+Python 3.7, 3.8, 3.9, 3.10, 3.11 and PyPy3.
 Its goal is to make testing your code against multiple Python versions quick and easy.
 The image contains several `ONBUILD` commands for initializing the tox environments with
 your project's `requirements.txt` files.
@@ -55,7 +55,7 @@ environment.
 Example `tox.ini` supporting the TOXBUILD environment variable:
 
     [tox]
-    envlist = py36,py37,py38,py39,py310,pypy3
+    envlist = py37,py38,py39,py310,py311,pypy3
     skipsdist = {env:TOXBUILD:false}
 
     [testenv]
